@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Averta Demo PE Cutted Demo Regular';
+	src: url('../fonts/averta_demo_pe_cutted_demo_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/averta_demo_pe_cutted_demo_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/averta_demo_pe_cutted_demo_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/averta_demo_pe_cutted_demo_regular.svg#averta_demo_pe_cutted_demo_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

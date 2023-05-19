@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Averta Demo PE Cutted Demo Regular';
+    src: url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'),
+         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'),
+         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.ttf') format('ttf'),
+         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.svg') format('svg'),
+         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.eot') format('eot');
+  }
+
+* {
+    font-family: 'Averta Demo PE Cutted Demo Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(38, 57, 237, 1);
+    border-radius: 5rem;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    color:rgba(38, 57, 237, 1);
+    font-size: 2rem;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    color: #111;
+}
+
+.header {
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 4rem 9%;
+}
+
+.header .navbar a {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 19.78px;
+    color: #111;
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+.header .navbar a:hover {
+  color: rgba(38, 57, 237, 1);
+ 
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 27.15px;
+  font-weight: 700px;
+  color: #111;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #111;
+  cursor: pointer;
+  display: none;
+}
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 8.2rem;
+  }
+  
+  .about .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+  }
+
+  
+  .about .content h3 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  
+  .about .content p {
+    padding: 4rem 0;
+    font-size: 16px;
+    color: rgba(86, 86, 86, 1);
+    line-height: 25.6px;
+    width: 470px;
+  }
+
+  .about .image-container {
+    margin-right: -130px;
+  }
+  
+  .about .image-container img {
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 24.72px;
+    color: #ffffff;
+    border-radius: 60px;
+    cursor: pointer;
+    background: rgba(38, 57, 237, 1);
+}
+
+.btn:hover {
+    background: rgb(163, 172, 255);
+    color: rgba(38, 57, 237, 1);
+}
+
+
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 1.5rem 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #222;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      margin: 2rem;
+      font-size: 2rem;
+      display: block;
+    }
+    .home {
+      margin-top: 10rem;
+    }
+    .home .content span {
+      font-size: 8vw;
+    }
+    .home .content h3 {
+      font-size: 9vw;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .about .content h3 {
+      font-size: 3.5rem;
+    }
+    .banner .content h3 {
+      font-size: 2.7rem;
+    }
+  }
