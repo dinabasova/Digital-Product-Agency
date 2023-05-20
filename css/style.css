@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Averta Demo PE Cutted Demo Regular';
-    src: url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'),
-         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'),
-         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.ttf') format('ttf'),
-         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.svg') format('svg'),
-         url('../e063ae4a5cb60b17df2ca5c69f00a36f/fonts/averta_demo_pe_cutted_demo_regular.eot') format('eot');
+    src: url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'),
+         url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'),
+         url('../font/fonts/averta_demo_pe_cutted_demo_regular.ttf') format('ttf'),
+         url('../font/fonts/averta_demo_pe_cutted_demo_regular.svg') format('svg'),
+         url('../font/fonts/averta_demo_pe_cutted_demo_regular.eot') format('eot');
   }
 
 * {
@@ -79,6 +79,7 @@ section {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 4rem 9%;
+    
 }
 
 .header .navbar a {
@@ -124,6 +125,11 @@ section {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 8.2rem;
+    background-image: url("../images/image2.png");
+    background-position-x: 65px;
+    background-position-y: 31px;
+    background-size:auto;
+    background-repeat: no-repeat;
   }
   
   .about .content {
@@ -174,6 +180,49 @@ section {
     color: rgba(38, 57, 237, 1);
 }
 
+.clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .clients .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    margin-bottom: 5rem;
+  }
+
+  
+  .clients .content h3 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  
+  .clients .content p {
+    padding: 2rem 0;
+    font-size: 18px;
+    color: rgba(86, 86, 86, 1);
+    line-height: 25.6px;
+    width: 350px;
+  }
+
+  .clients .clients_section{
+    padding-left: 13px;
+  }
+  
+  .clients .clients_section img {
+    width: 100%;
+  }
+
 
 @media (max-width: 991px) {
     html {
@@ -209,13 +258,13 @@ section {
       font-size: 2rem;
       display: block;
     }
-    .home {
+    .clients {
       margin-top: 10rem;
     }
-    .home .content span {
+    .clients .content span {
       font-size: 8vw;
     }
-    .home .content h3 {
+    .clients .content h3 {
       font-size: 9vw;
     }
   }
