@@ -196,6 +196,7 @@ section {
   .clients .content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
+
     margin-bottom: 5rem;
   }
 
@@ -216,7 +217,7 @@ section {
   }
 
   .clients .clients_section{
-    padding-left: 13px;
+    padding-left: -130px;
   }
   
   .clients .clients_section img {
@@ -273,7 +274,7 @@ section {
     html {
       font-size: 50%;
     }
-    .about .content h3 {
+    .clients .content h3 {
       font-size: 3.5rem;
     }
     .banner .content h3 {
