@@ -93,25 +93,24 @@ section {
 }
 
 .header .navbar a:hover {
-  color: rgba(38, 57, 237, 1);
- 
+    color: rgba(38, 57, 237, 1);
 }
 
 .header .btn {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .logo {
-  font-size: 27.15px;
-  font-weight: 700px;
-  color: #111;
+    font-size: 27.15px;
+    font-weight: 700px;
+    color: #111;
 }
 
 #menu-btn {
-  font-size: 2.5rem;
-  color: #111;
-  cursor: pointer;
-  display: none;
+    font-size: 2.5rem;
+    color: #111;
+    cursor: pointer;
+    display: none;
 }
 
 .about {
@@ -130,40 +129,38 @@ section {
     background-position-y: 31px;
     background-size:auto;
     background-repeat: no-repeat;
-  }
+}
   
-  .about .content {
+.about .content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
     flex: 1 1 42rem;
     margin-bottom: 5rem;
-  }
+}
 
-  
-  .about .content h3 {
+.about .content h3 {
     color: #000000;
     font-size: 40px;
-    font-weight: 400;
     margin-top: .5rem;
-  }
-  
-  .about .content p {
+}
+
+.about .content p {
     padding: 4rem 0;
     font-size: 16px;
     color: rgba(86, 86, 86, 1);
     line-height: 25.6px;
     width: 470px;
-  }
+}
 
-  .about .image-container {
+.about .image-container {
     margin-right: -130px;
-  }
-  
-  .about .image-container img {
-    width: 100%;
-  }
+}
 
-  .btn {
+.about .image-container img {
+    width: 100%;
+}
+
+.btn {
     display: inline-block;
     padding: 20px 40px;
     font-size: 20px;
@@ -180,6 +177,8 @@ section {
     color: rgba(38, 57, 237, 1);
 }
 
+
+
 .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -193,37 +192,35 @@ section {
     margin-top: 6rem;
   }
 
-  .clients .content {
+.clients .content1 {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 42rem;
-
+    flex: 1 1 42rem;
     margin-bottom: 5rem;
-  }
+}
 
-  
-  .clients .content h3 {
+
+.clients .content1 h3 {
     color: #000000;
     font-size: 40px;
-    font-weight: 400;
-    margin-top: .5rem;
-  }
-  
-  .clients .content p {
-    padding: 2rem 0;
+}
+
+.clients .content1 p {
+    padding: 1rem 0;
     font-size: 18px;
     color: rgba(86, 86, 86, 1);
     line-height: 25.6px;
     width: 350px;
-  }
+}
 
-  .clients .clients_section{
-    padding-left: -130px;
-  }
-  
-  .clients .clients_section img {
+.clients .image_section {
+    margin-right: -130px;
+}
+
+.clients .image_section img {
     width: 100%;
-  }
-
+}
+  
 
 @media (max-width: 991px) {
     html {
