@@ -158,7 +158,18 @@ section {
 
 .about .image-container img {
     width: 100%;
+    overflow: hidden;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
+
+
+.about .image-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+ 
 
 .btn {
     display: inline-block;
@@ -176,8 +187,6 @@ section {
     background: rgb(163, 172, 255);
     color: rgba(38, 57, 237, 1);
 }
-
-
 
 .clients {
     display: -webkit-box;
@@ -199,10 +208,10 @@ section {
     margin-bottom: 5rem;
 }
 
-
 .clients .content1 h3 {
     color: #000000;
     font-size: 40px;
+    width: 350px;
 }
 
 .clients .content1 p {
@@ -213,12 +222,13 @@ section {
     width: 350px;
 }
 
-.clients .image_section {
-    margin-right: -130px;
+.clients .clients_section {
+    margin-left: -80px;
 }
 
-.clients .image_section img {
+.clients .clients_section img {
     width: 100%;
+
 }
   
 
