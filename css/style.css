@@ -441,23 +441,28 @@ section {
   line-height: 28.8px;
 }
 
-.carusel {
+.review_section {
   width: 100%;
   min-height: 100%;
   background-image: url("../images/image12.png");
+  background-position-x: -23px;
   background-repeat: no-repeat;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+ 
 }
 
 .left_side {
   margin-left: -53px;
-  position: absolute;
 }
 
 .carousel-container {
-  width: 100%;
+  right: 200px;
+  width: 412px;
   overflow: hidden;
-  position: absolute;
+  margin-bottom: 20px;
 }
 
 .carousel {
@@ -514,14 +519,14 @@ section {
 }
 
 .right_side {
-  position: absolute;
+  
 
 }
 
 
 
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     html {
       font-size: 55%;
     }
@@ -576,4 +581,4 @@ section {
     .banner .content h3 {
       font-size: 2.7rem;
     }
-  }
+  } */
