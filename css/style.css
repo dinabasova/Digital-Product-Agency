@@ -1,14 +1,22 @@
-@font-face {
+/* @font-face {
     font-family: 'Averta Demo PE Cutted Demo Regular';
     src: url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'),
          url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'),
          url('../font/fonts/averta_demo_pe_cutted_demo_regular.ttf') format('ttf'),
          url('../font/fonts/averta_demo_pe_cutted_demo_regular.svg') format('svg'),
          url('../font/fonts/averta_demo_pe_cutted_demo_regular.eot') format('eot');
+  } */
+
+  @font-face {
+    font-family: 'Averta PE Cutted';
+    src: url('../averta/AvertaDemoPE-ExtraBold.otf') format('opentype'),
+         url('../averta/AvertaDemoPECuttedDemo-Regular.otf') format('opentype'),
   }
 
+
+
 * {
-    font-family: 'Averta Demo PE Cutted Demo Regular', sans-serif;
+    font-family: 'Averta PE Cutted', sans-serif;
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -400,8 +408,6 @@ section {
   margin-left: -53px;
 }
 
-
-
 /* /////// REVIEW ////// */
 
 .review {
@@ -446,12 +452,12 @@ section {
   min-height: 100%;
   background-image: url("../images/image12.png");
   background-position-x: -23px;
+
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
- 
 }
 
 .left_side {
@@ -462,7 +468,7 @@ section {
   right: 200px;
   width: 412px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .carousel {
@@ -497,7 +503,6 @@ section {
   font-weight: 400;
   line-height: 25.6px;
 }
-
 
 .carousel-dots {
   display: flex;
