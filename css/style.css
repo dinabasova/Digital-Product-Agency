@@ -534,6 +534,7 @@ section {
   background-image: url("../images/image13.png");
   background-position-x: 82px;
   background-repeat: no-repeat;
+  margin-bottom: 300px;
 }
 
 .subscribe .content5 {
@@ -563,12 +564,10 @@ section {
   border-radius: 60px;
   background-color: white;
   margin-right: 50px;
-  /* padding-left: 34px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  flex-direction: column;
+ 
 }
 
 .inputbox{
@@ -579,7 +578,7 @@ section {
 }
 
 .inputbox label{
-  margin-left: 30px;
+  margin-left: 35px;
   position: absolute;
   top: 50%;
   left: 5px;
@@ -598,7 +597,6 @@ input:valid ~ label{
   height: 50px;
   background: transparent;
   font-size: 1em;
-  padding: 0 35px 0 5px;
   color: #000000;
 }
 
@@ -615,6 +613,94 @@ button{
   outline: none;
   cursor: pointer;
 }
+
+/* ///// FOOTER ///// */
+
+
+.footer .box-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+.footer .box-container .leftpart {
+  width: 270px;
+}
+
+.footer .box-container .leftpart h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+
+}
+
+.footer .box-container .leftpart p {
+  width: 270px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #565656;
+  padding: 2rem 0;
+  line-height: 2;
+  padding-bottom: 40px;
+}
+
+.footer .box-container .leftpart .share a {
+  height: 36px;
+  width: 36px;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 16px;
+}
+
+#fb{ background: #3B5998; }
+
+#tw{ background: #55ACEE; }
+
+#ld{ background: #007AB9; }
+
+.footer .box-container .rightpart{
+  margin-left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+ 
+}
+
+.footer .box-container .box {
+  margin-right: 100px;
+}
+
+
+.footer .box-container .rightpart h3{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom:  24px;
+}
+  
+.footer .box-container .rightpart p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000;
+  padding: 0 3px 3px 0;
+  
+}
+
+.footer .box-container .rightpart p:hover {
+  color: #2639ED;
+}
+
 
 
 
