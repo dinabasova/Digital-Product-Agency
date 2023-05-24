@@ -148,7 +148,7 @@ section {
 .about .content p {
     padding: 4rem 0;
     font-size: 16px;
-    color: rgba(86, 86, 86, 1);
+    color: #565656;
     line-height: 25.6px;
     width: 470px;
 }
@@ -220,7 +220,7 @@ section {
 .clients .content1 p {
     padding: 1rem 0;
     font-size: 18px;
-    color: rgba(86, 86, 86, 1);
+    color: #565656;
     line-height: 25.6px;
     width: 350px;
 }
@@ -270,7 +270,7 @@ section {
 .help .content2 p {
     padding: 3rem 0;
     font-size: 18px;
-    color: rgba(86, 86, 86, 1);
+    color: #565656;
     line-height: 25.6px;
     width: 450px;
 }
@@ -349,7 +349,7 @@ section {
   padding: 27px 0;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(86, 86, 86, 1);
+  color: #565656;
   line-height: 25.6px;
 }
 
@@ -391,7 +391,7 @@ section {
   padding-top: 39px;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(86, 86, 86, 1);
+  color: #565656;
   line-height: 25.6px;
 
 }
@@ -400,10 +400,7 @@ section {
   margin-left: -53px;
 }
 
-.data .data_section img {
-  width: 100%;
 
-}
 
 /* /////// REVIEW ////// */
 
@@ -423,9 +420,10 @@ section {
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
   margin-bottom: 5rem;
-  margin-left: 4rem;
+  flex-direction: column;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .review .content4 h3 {
@@ -433,33 +431,94 @@ section {
   font-size: 40px;
   font-weight: 400;
   line-height: 49.44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .review .content4 p {
   padding-top: 17px;
   font-size: 18px;
   font-weight: 400;
-  color: rgba(86, 86, 86, 1);
+  color: #565656;
   line-height: 28.8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.carusel {
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../images/image12.png");
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .left_side {
- 
+  margin-left: -53px;
+  position: absolute;
 }
 
-.center_side {
-  
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carousel-item {
+  width: 412px;
+  height: 150px;
+}
+
+.carousel-item h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.66px;
+}
+
+.carousel-item p {
+  margin: 0;
+  padding-top: 17px;
+  color: #565656;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+
+.carousel-dots {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 26px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #2639ED;
 }
 
 .right_side {
+  position: absolute;
 
 }
+
+
 
 
 @media (max-width: 991px) {
