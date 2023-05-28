@@ -705,7 +705,7 @@ nav {
   border-radius: 60px;
   position: absolute;
   padding: 20px 40px;
-  width: 109px;
+  width: 70px;
   height: auto;
   font-weight: 700;
   font-size: 16px;
@@ -856,8 +856,15 @@ footer {
   transform: translateX(-15px);
 }
 
-.clients_item {
-  transition: all 0.3s;
+.clients_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.clients_item:last-child {
+  transform: translateY(10px);
 }
 
 .clients_item:hover {
