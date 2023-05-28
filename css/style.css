@@ -1,14 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
-
 @font-face {
-  font-family: 'Averta Demo PE Cutted Demo Regular';
-  src: url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff') format('woff'),
-    url('../font/fonts/averta_demo_pe_cutted_demo_regular.woff2') format('woff2'),
-    url('../font/fonts/averta_demo_pe_cutted_demo_regular.ttf') format('ttf'),
-    url('../font/fonts/averta_demo_pe_cutted_demo_regular.svg') format('svg'),
-    url('../font/fonts/averta_demo_pe_cutted_demo_regular.eot') format('eot');
+  font-family: "Averta Demo PE Cutted Demo";
+  src: local("Averta Demo PE Cutted Demo Regular"), local("AvertaDemoPECuttedDemo-Regular"),
+      url("../fonts/Avertademopecutteddemoregular.woff2") format("woff2"), url("../fonts/Avertademopecutteddemoregular.woff") format("woff"),
+      url("../fonts/Avertademopecutteddemoregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+header{
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f4f9ff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f9ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
 
 * {
   /* font-family: 'Montserrat', sans-serif; */
@@ -63,18 +91,17 @@ section {
 
 /* ////////// HEAADER //////////// */
 .header {
-  background: #ffffff;
+  background:rgb(255, 255, 255, 0.7);
   position: fixed;
   top: 0;
   left: 0;
-  right: -80px;
-  z-index: 1000;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   align-items: end;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+
   justify-content: space-between;
   padding: 2rem 9%;
 }
@@ -208,8 +235,6 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 6rem;
 }
@@ -224,7 +249,6 @@ section {
 .clients .content1 h3 {
   color: #000000;
   font-size: 40px;
-  width: 350px;
 }
 
 .clients .content1 p {
@@ -232,12 +256,9 @@ section {
   font-size: 18px;
   color: #565656;
   line-height: 25.6px;
-  width: 350px;
 }
 
-.clients .clients_section {
-  margin-left: -80px;
-}
+
 
 .clients .clients_section img {
   width: 100%;
@@ -253,14 +274,12 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  
   gap: 2rem;
   margin-top: 14rem;
   background-image: url("../images/image4.png");
-  background-position-x: 65px;
-  background-position-y: 31px;
-  background-size: auto;
+
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -274,7 +293,7 @@ section {
 .help .content2 h3 {
   color: #000000;
   font-size: 40px;
-  width: 350px;
+  
 }
 
 .help .content2 p {
@@ -282,7 +301,7 @@ section {
   font-size: 18px;
   color: #565656;
   line-height: 25.6px;
-  width: 450px;
+
 }
 
 .box-container {
@@ -290,8 +309,7 @@ section {
   grid-template-columns: repeat(2, 308px);
   grid-template-rows: repeat(6, 70px) 70px repeat(3, 70px);
   gap: 34px 30px;
-  margin-right: 50px;
-  margin-top: -170px;
+
 }
 
 .box1,
@@ -379,12 +397,10 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+
   gap: 2rem;
   background-image: url("../images/image10.png");
-  background-position-x: 590px;
-  background-position-y: 100px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -393,7 +409,6 @@ section {
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
   margin-bottom: 5rem;
-  margin-left: 4rem;
 }
 
 .data .content3 h3 {
@@ -458,7 +473,7 @@ section {
 .review_section {
   width: 100%;
   background-image: url("../images/image12.png");
-  background-position-x: -23px;
+  background-size: contain;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +482,7 @@ section {
 }
 
 .left_side {
+  
   margin-left: -53px;
 }
 
@@ -533,6 +549,7 @@ section {
 
 .subscribe {
   height: 400px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,9 +560,7 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   background-image: url("../images/image13.png");
-  background-position-x: 82px;
   background-repeat: no-repeat;
-  margin-bottom: 300px;
 }
 
 .subscribe .content5 {
@@ -574,11 +589,10 @@ section {
   width: 479px;
   border-radius: 60px;
   background-color: white;
-  margin-right: 50px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .inputbox {
@@ -586,12 +600,9 @@ section {
   font-weight: 400;
   font-size: 16px;
   color: #959595;
-  ;
 }
 
 .inputbox label {
-  margin-left: 35px;
-  position: absolute;
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
@@ -628,20 +639,15 @@ button {
 
 /* ///// FOOTER ///// */
 
-
 .footer .box-container {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
 }
 
 .footer .box-container .leftpart {
-  width: 270px;
+  
 }
 
 .footer .box-container .leftpart h3 {
@@ -649,7 +655,6 @@ button {
   font-size: 20px;
   line-height: 25px;
   color: #000000;
-
 }
 
 .footer .box-container .leftpart p {
@@ -667,7 +672,7 @@ button {
   height: 36px;
   width: 36px;
   line-height: 3.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 50%;
   color: #ffffff;
   text-align: center;
@@ -690,7 +695,6 @@ button {
   margin-left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
-
 }
 
 .footer .box-container .box {
@@ -706,21 +710,33 @@ button {
   padding-bottom: 24px;
 }
 
-.footer .box-container .rightpart p {
+.footer .box-container .rightpart a {
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
   color: #000000;
+  display: block;
   padding: 0 3px 3px 0;
-
+  transition: 0.3s;
 }
 
-.footer .box-container .rightpart p:hover {
+.footer .box-container .rightpart a:hover {
   color: #2639ED;
 }
 
+.footer .box-container .rightpart a:after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  width: 0;
+  height: 2px;
+  background:rgba(38, 57, 237, 1);
+  transition: 0.3s;
+}
 
-
+.footer .box-container .rightpart a:hover:after{
+  width: 100%;
+}
 
 @media (max-width: 991px) {
     html {
