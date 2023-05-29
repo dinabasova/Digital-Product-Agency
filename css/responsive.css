@@ -230,6 +230,7 @@
         display: block;
         width: 26px;
         height: 16px;
+        z-index: 99;
     }
     .hamburger span {
         display: block;
@@ -489,4 +490,4 @@
     .subscribe_input::after {
         width: 101px;
     }
-}
+  }

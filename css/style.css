@@ -466,7 +466,7 @@ nav {
   height: 154px;
   background: url("../images/Dot.png");
   top: -42px;
-  right: -37px;
+  left: 235px;
 }
 
 .reviews_text {
@@ -704,7 +704,7 @@ nav {
   background: #2639ed;
   border-radius: 60px;
   position: absolute;
-  padding: 20px 40px;
+  padding: 15px 40px;
   width: 70px;
   height: auto;
   font-weight: 700;
@@ -803,6 +803,7 @@ footer {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .nav_logo {
